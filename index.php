@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht4 - nagelstudio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h3>Bling Bling Nagelstudio Chantal</h3>
@@ -42,7 +43,7 @@
             <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5,00</label>
     <br>
     <br>
-    <!--<input type="hidden" name="date">-->
+    <input type="hidden" name="datumTijd">
         <input type="submit" value="Sla op">
         <input type="reset" value="Reset">
     </form>

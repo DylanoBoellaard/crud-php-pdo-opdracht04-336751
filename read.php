@@ -73,6 +73,7 @@
     }
 ?>
 
+<link rel="stylesheet" href="css/style.css">
 <a href="index.php">Homepage</a>
 <h3>Afspraken</h3>
 <a href="index.php"><input type="button" value="Nieuwe afspraak"></a>
