@@ -43,7 +43,6 @@
             <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5,00</label>
     <br>
     <br>
-    <input type="hidden" name="datumTijd">
         <input type="submit" value="Sla op">
         <input type="reset" value="Reset">
     </form>
