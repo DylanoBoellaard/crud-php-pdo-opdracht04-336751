@@ -22,7 +22,7 @@
     }
 
     // 4. Maak een select query voor het opvragen van de gegevens.
-    $sql = "SELECT AfspraakId
+    $sql = "SELECT afspraakID
                     ,kleur1
                     ,kleur2
                     ,kleur3
@@ -34,7 +34,7 @@
                     ,manicure
                     ,nagelreparatie
             FROM Afspraak
-            ORDER BY Id";
+            ORDER BY afspraakID";
 
     // 5. We bereiden de query voor met de method prepare()
     $statement = $pdo->prepare($sql);
@@ -48,7 +48,7 @@
     $rows = "";
     foreach ($result as $info) {
         $rows .= "<tr>
-                    <td>$info->AfspraakID</td>
+                    <td>$info->afspraakID</td>
                     <td>$info->kleur1</td>
                     <td>$info->kleur2</td>
                     <td>$info->kleur3</td>
@@ -60,12 +60,12 @@
                     <td>$info->manicure</td>
                     <td>$info->nagelreparatie</td>
                     <td>
-                        <a href='delete.php?id={$info->Id}'>
+                        <a href='delete.php?id={$info->afspraakID}'>
                             <img src='img/b_drop.png' alt='kruis'>
                         </a>
                     </td>
                     <td> 
-                        <a href='update.php?id={$info->Id}'>
+                        <a href='update.php?id={$info->afspraakID}'>
                             <img src='img/b_edit.png' alt='potlood'>
                         </a>
                     </td>
@@ -73,9 +73,9 @@
     }
 ?>
 
-<a href="index.php">Home page</a>
-<h3>Pizza's</h3>
-<a href="index.php"><input type="button" value="Bestel nieuwe pizza"></a>
+<a href="index.php">Homepage</a>
+<h3>Afspraken</h3>
+<a href="index.php"><input type="button" value="Nieuwe afspraak"></a>
 <br><br>
 <table border="1">
     <thead>
