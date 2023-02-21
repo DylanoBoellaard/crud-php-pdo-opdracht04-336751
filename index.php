@@ -11,6 +11,7 @@
 <body>
     <h3>Bling Bling Nagelstudio Chantal</h3>
 
+    <a href="read.php">Afspraken</a>
     <form action="create.php" method="post">
         <label for="color1">Kies 4 basiskleuren voor uw nagels:</label><br>
         <input type="color" name="color1" id="color1" value="#f28f93">
@@ -28,15 +29,15 @@
         <input type="datetime-local" name="date" id="date" required>
     <br>
     <br>
-        <input type="checkbox" name="nagelbijt" id="nagelbijt" value="nagelbijt">
+        <input type="checkbox" name="nagelbijt" id="nagelbijt" value="ja">
             <label for="nagelbijt">Nagelbijt arrangement (termijnbetaling mogelijk) €180</label>
     <br>
     <br>
-        <input type="checkbox" name="manicure" id="manicure" value="manicure">
+        <input type="checkbox" name="manicure" id="manicure" value="ja">
             <label for="manicure">Luxe manicure (massage en handpakking) €30,00</label>
     <br>
     <br>
-        <input type="checkbox" name="nagelreparatie" id="nagelreparatie" value="nagelreparatie">
+        <input type="checkbox" name="nagelreparatie" id="nagelreparatie" value="ja">
             <label for="nagelreparatie">Nagelreparatie per nagel (in eerste week gratis) €5,00</label>
     <br>
     <br>
