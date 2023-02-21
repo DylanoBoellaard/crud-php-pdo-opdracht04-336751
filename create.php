@@ -47,7 +47,7 @@ $sql = "INSERT INTO Afspraak (afspraakID
                             ,:nagelreparatie);";
 
 // Zorgt ervoor dat de default values '' wordt als er niets ingevuld is
-// Bij de kruiden wordt er ipv een empty string, 'nee' als default value meegegeven als de checkboxes niet aangeklikt zijn
+// Bij de checkboxes (onderste 3) wordt er ipv een empty string, 'nee' als default value meegegeven als de checkboxes niet aangeklikt zijn
 $kleur1 = (isset($_POST['kleur1'])) ? $_POST['kleur1'] : '';
 $kleur2 = (isset($_POST['kleur2'])) ? $_POST['kleur2'] : '';
 $kleur3 = (isset($_POST['kleur3'])) ? $_POST['kleur3'] : '';
@@ -80,5 +80,5 @@ $statement->bindValue(':nagelreparatie', $nagelreparatie, PDO::PARAM_STR);
 $statement->execute();
 
 echo "Het opslaan is gelukt";
-// Link door naar read.php voor een overzicht van de gegevens in tabel Persoon
+// Link door naar read.php voor een overzicht van de gegevens in tabel Afspraak
 header('Refresh:4; url=read.php');

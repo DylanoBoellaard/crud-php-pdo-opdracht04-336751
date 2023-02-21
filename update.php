@@ -31,7 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     nagelreparatie = :nagelreparatie
 
                 WHERE afspraakID = :afspraakID";
-
+        
+        // Zorgt voor default values "nee"
         $nagelbijt = (isset($_POST['nagelbijt'])) ? $_POST['nagelbijt'] : "nee";
         $manicure = (isset($_POST['manicure'])) ? $_POST['manicure'] : "nee";
         $nagelreparatie = (isset($_POST['nagelreparatie'])) ? $_POST['nagelreparatie'] : "nee";

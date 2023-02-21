@@ -18,7 +18,7 @@ try {
     echo $e->getMessage();
 }
 
-// Maak een delete query om een record in de tabel achtbaan te verwijderen
+// Maak een delete query om een record in de tabel Afspraak te verwijderen
 $sql = "DELETE FROM Afspraak
         WHERE afspraakID = :afspraakID";
 
